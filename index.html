@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SweetAlert Sample</title>
+    <link href="bootstrap_test.css" rel="stylesheet">
+    <link rel="stylesheet" href="sweetalert.css">
+    <style>
+        .swal-wide {
+            border-radius: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <center>
+
+        <button class="btn btn-lg btn-primary" onclick="swal('Hello world!');">Example 1</button>
+        <br />
+        <br />
+        <button class="btn btn-lg btn-primary" onclick="swal('The title!', '...the text!');">Example 2</button>
+        <br />
+        <br />
+        <button class="btn btn-lg btn-primary" onclick="swal('Good job!', 'Success!', 'success');">Success</button>
+        <br />
+        <br />
+        <button class="btn btn-lg btn-primary" onclick="swal('Good job!', 'Error!', 'error');">Error</button>
+        <br />
+        <br />
+        <button class="btn btn-lg btn-primary" onclick="swal('Good job!', 'Warning!', 'warning');">Warning</button>
+        <br />
+        <br />
+        <button class="btn btn-lg btn-primary" onclick="swal('Good job!', 'Info!', 'info');">Info</button>
+        <br />
+        <br />
+        <button class="btn btn-lg btn-primary" onclick="swal({
+                title: 'Good job!',
+                customClass: 'swal-wide',
+                text: 'You clicked the button!',
+                confirmButtonColor: '#0BA9F9',
+                imageUrl: 'warning.png'
+              });">Icon
+            1</button>
+        <br />
+        <br />
+        <button class="btn btn-lg btn-primary" onclick="swal({
+                  title: 'Good job!',
+                  customClass: 'swal-wide',
+                  text: 'You clicked the button!',
+                  confirmButtonColor: '#0BA9F9',
+                  imageUrl: 'success.png'
+                });">Icon
+            2</button>
+
+
+    </center>
+
+
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap_test.js"></script>
+    <script src="sweetalert-dev.js"></script>
+
+</body>
+
+
+</html>
